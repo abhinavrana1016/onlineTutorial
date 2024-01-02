@@ -9,10 +9,7 @@ const userSchema = new mongoose.Schema({
     password:{type:String,require:true,unique:true},
     dateofbirth:{type:Date,require:true},
     mobileno:{type:Number,require:true},
-    avtar:{
-        public_id:{type:String},
-        url:{type:String},
-    },
+    role:{type:String},
     otp:{type:String},
     otpExpiray:{type:Date},
     verified:{type:Boolean,default:false}
